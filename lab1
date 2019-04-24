@@ -538,9 +538,15 @@ dfuncao(){
 
 }
 #-r gera o relatório (contido no diretório relatório)
-#rfuncao(){
-#
-#}
+rfuncao(){
+
+
+	echo "Gerando pdf do relatório a partir do código fonte Latex."
+	#comando
+	echo "Gerando figuras a partir do código fonte em R."
+	Rscript missCache.R
+	Rscript missRate.R
+}
 
 if [ "$1" = "-h" ];then
 	hfuncao

@@ -1,0 +1,47 @@
+------BT------ 
+ARQUITETURA 1 --> 3,29375
+ARQUITETURA 2 --> 3,24125
+
+------CG------ 
+ARQUITETURA 1 --> 20,08875
+ARQUITETURA 2 --> 20,92375
+
+
+------DC------ 
+ARQUITETURA 1 --> 2,4175
+ARQUITETURA 2 --> 2,87
+
+
+------EP------ 
+ARQUITETURA 1 --> 1,0575
+ARQUITETURA 2 --> 1,38375
+
+
+------FT------ 
+ARQUITETURA 1 --> 11,605
+ARQUITETURA 2 --> 12,1975
+
+
+------IS------ 
+ARQUITETURA 1 --> 5,2125
+ARQUITETURA 2 --> 6,29125
+
+
+------LU------ 
+ARQUITETURA 1 --> 5,54
+ARQUITETURA 2 --> 6,23375
+
+
+------MG------ 
+ARQUITETURA 1 --> 5,9625
+ARQUITETURA 2 --> 9,3375
+
+
+------SP------ 
+ARQUITETURA 1 --> 6,22875
+ARQUITETURA 2 --> 7,05625
+
+
+------UA------ 
+ARQUITETURA 1 --> 2,83125
+ARQUITETURA 2 --> 3,30625

@@ -1,0 +1,95 @@
+------BT------ 
+ARQUITETURA 1 --> 34659231.875
+ARQUITETURA 2 --> 34052162.75
+
+
+------CG------ 
+ARQUITETURA 1 --> 19726721.25
+ARQUITETURA 2 --> 20501904
+
+
+------DC------ 
+ARQUITETURA 1 --> 135611069.625
+ARQUITETURA 2 --> 160757746.75
+
+
+------EP------ 
+ARQUITETURA 1 --> 2218875.75
+ARQUITETURA 2 --> 2902637.125
+
+
+------FT------ 
+ARQUITETURA 1 --> 7473482.25
+ARQUITETURA 2 --> 7748815.5
+
+
+------IS------ 
+ARQUITETURA 1 --> 1350757.25
+ARQUITETURA 2 --> 1547465.625
+
+
+------LU------ 
+ARQUITETURA 1 --> 181931080.375
+ARQUITETURA 2 --> 94294083.5
+
+
+------MG------ 
+ARQUITETURA 1 --> 4095895.375
+ARQUITETURA 2 --> 14293671.875
+
+
+------SP------ 
+ARQUITETURA 1 --> 108375541.875
+ARQUITETURA 2 --> 260359554.125
+
+
+------UA------ 
+ARQUITETURA 1 --> 37353734.875
+ARQUITETURA 2 --> 43758959.125
+
+
+        acertos <- matrix(c(34659231,875,	34659231,875,	34659231,875,	34659231,875, 34659231,875,
+                            34659231,875,	34659231,875,	34659231,875, 34659231,875,	34659231,875,
+                            34659231,875,	34659231,875, 34659231,875,	34659231,875,	34659231,875,
+                            34659231,875, 34659231,875,	34659231,875,	34659231,875,	34659231,875), ncol=10, byrow=TRUE)
+
+colnames(acertos) <- c("BT","CG","DC","EP","FT","IS","LU","MG","SP","UA")
+rownames(acertos) <- c("Arquitetura 1","Arquitetura 2")
+ac_data <- as.table(acertos)
+
+ac_data 
+
+par(xpd = TRUE, mar=c(2, 2, 2, 5), oma=c(0,0,0,0))
+barplot(as.matrix(ac_data),
+        ylab="Taxa de Acertos", cex.lab=0.8,
+        cex.axis = 0.8,
+        beside=TRUE, ylim=c(34000000, 35000000), xpd = FALSE,
+        cex.names = 0.8,
+        col=grey.colors(n = 2, start = 0.1, end = 0.8))
+
+legend(29, 99, rownames(acertos), cex=0.8, title="Configurações", bty="n",
+       fill=grey.colors(n = 2, start = 0.1, end = 0.8));
+
+
+
+acertos <- matrix(c(96.054,	94.392,	94.814,	94.652, 99.486,
+                     96.889,	96.467,	95.472, 99.982,	99.738,
+                     99.744,	99.381, 99.996,	99.994,	99.996,
+                     99.996, 98.287,	95.771,	95.287,	95.190), ncol=10, byrow=TRUE)
+ 
+ colnames(acertos) <- c("BT","CG","DC","EP","FT","IS","LU","MG","SP","UA")
+ rownames(acertos) <- c("Arquitetura 1","Arquitetura 2")
+ ac_data <- as.table(acertos)
+ 
+ ac_data 
+ 
+ par(xpd = TRUE, mar=c(2, 2, 2, 5), oma=c(0,0,0,0))
+ barplot(as.matrix(ac_data),
+         ylab="Taxa de Acertos", cex.lab=0.8,
+         cex.axis = 0.8,
+         beside=TRUE, ylim=c(34000000, 35000000), xpd = FALSE,
+         cex.names = 0.8,
+         col=grey.colors(n = 2, start = 0.1, end = 0.8))
+ 
+ legend(29, 99, rownames(acertos), cex=0.8, title="Configurações", bty="n",
+        fill=grey.colors(n = 2, start = 0.1, end = 0.8));
