@@ -6,9 +6,6 @@ echo
 echo "________________________________________"
 echo
 
-mkdir laboratorio1_99037
-cd laboratorio1_99037
-
 #-h help
 hfuncao(){
 
@@ -118,6 +115,7 @@ pfuncao(){
 	else
 		echo "Sniper não está instalado, executando instalação..."
 		ifuncao
+		cd sniper
 	fi
 	DIR=$(pwd)
 	sleep 2
@@ -140,8 +138,7 @@ pfuncao(){
 	echo "Programa configurado e pronto para as simulações"
 	sleep 2
 
-	cd ..
-	cd ..
+	cd ../..
 }
 
 #-s realiza as simulações e grava os resultados no diretório resultados
@@ -536,16 +533,25 @@ dfuncao(){
 	tools/mcpat.py -d $CDSNI/sniper/resultados/Arquitetura2/UA/ -o $CDSNI/sniper/resultados/mcpat/UA.arquitetura2.mcpat
 }
 
-}
+
 #-r gera o relatório (contido no diretório relatório)
 rfuncao(){
 
-
-	echo "Gerando pdf do relatório a partir do código fonte Latex."
-	#comando
+	cd fontes/R
 	echo "Gerando figuras a partir do código fonte em R."
 	Rscript missCache.R
+	mv Rplots.pdf missCache.pdf
 	Rscript missRate.R
+	mv Rplots.pdf missRate.R
+	Rscript energia.R
+	mv Rplots.pdf energia.pdf
+	Rscript dramLoads.R
+	mv Rplots.pdf dramLoads.pdf
+	cd ..
+	cd latex
+	echo "Gerando pdf do relatório a partir do código fonte Latex."
+	pdflatex sbc-template
+	sbc-template
 }
 
 if [ "$1" = "-h" ];then

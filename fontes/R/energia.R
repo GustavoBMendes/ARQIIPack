@@ -1,6 +1,6 @@
-acertos <- matrix(c(70,10,550,28, 10,
+acertos <- matrix(c(70,10,150,28, 10,
                     3.25,136,12.5,145,90,
-                    60,9,500,27, 8.4,
+                    60,9,100,27, 8.4,
                     2.75,119,19.4,153, 72), ncol=10, byrow=TRUE)
 
 colnames(acertos) <- c("BT","CG","DC","EP","FT","IS","LU","MG","SP","UA")
